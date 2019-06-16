@@ -1,0 +1,58 @@
+------------------select * 
+------------------from petsale
+----------------
+------------------
+------------------select sum(saleprice) as Store_Profit
+------------------from petsale
+------------------
+----------------select max(quantity) as Store_Quantity
+----------------from petsale
+----------------
+----------------select avg(saleprice) as Store_Avg_Profit
+----------------from petsale
+--------------
+----------------
+----------------select avg(saleprice/quantity) as Store_Avg_Profit_Per_Quantity
+----------------from petsale
+--------------
+--------------
+--------------select round(saleprice) as Rounded_Profits
+--------------from petsale
+------------
+------------
+--------------select length(animal)
+--------------from petsale
+------------
+--------------
+--------------select ucase(animal)
+--------------from petsale
+------------
+--------------
+--------------select lcase(animal)
+--------------from petsale
+------------
+------------
+--------------select unique(ucase(animal))
+--------------from petsale
+------------
+------------select distinct(ucase(animal))
+------------from petsale
+----------
+----------select *
+----------from petsale
+----------where lcase(animal) = 'cat'
+--------
+--------select DAY(SALEDATE)
+--------from PETSALE where ANIMAL = 'Cat'
+------
+------select COUNT(*)
+------from PETSALE 
+------where MONTH(SALEDATE)='05'
+----
+----select *, (SALEDATE + 3 DAYS) 
+----from PETSALE
+--
+--select *, (CURRENT DATE - SALEDATE) 
+--from PETSALE
+--
+
